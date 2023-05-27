@@ -1,0 +1,14 @@
+.Navbar {
+    background-color: fuchsia;
+    padding: 1rem;
+}
+
+.Navbar a {
+    font-size: 1.5rem;
+    margin: 1rem;
+    color: pink;
+}
+
+.Navbar a.active {
+    color: white;
+}
