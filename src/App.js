@@ -24,18 +24,21 @@ function App() {
     }
   };
 
-  async function login(data) {
+  async function signin(data) {
     try{
+      console.log('signin ran');
       let token = await NoodleHutApi.login(data);
       setToken(token);
+      console.log("logged in");
       return { success: true }
     } catch (e) {
-      console.error("login failed", e);
+      console.error("signin failed", e);
       return { success: false, e };
     }
   };
 
-  async function logout() {
+  async function signout() {
+    console.log('sign out ran!')
     setCurrentUser(null);
     setToken(null);
   };
@@ -50,6 +53,7 @@ function App() {
             NoodleHutApi.token = token;
             const user = await NoodleHutApi.currentUser(username);
             setCurrentUser(user);
+            console.log('current user:', user);
           }
         } catch (e){
           console.error("getCurrentUser failed", e);
@@ -65,7 +69,7 @@ function App() {
   return (
     <div className="App">
       <UserContext.Provider
-        value={{ token, currentUser, setCurrentUser, signup, login, logout }}
+        value={{ token, currentUser, setCurrentUser, signup, signin, signout }}
       >
         <AppRoutes />
       </UserContext.Provider>

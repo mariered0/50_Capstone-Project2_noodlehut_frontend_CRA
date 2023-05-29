@@ -2,7 +2,7 @@ import * as yup from "yup";
 
 const phoneRegExp = /^(\+\d{1,2}\s?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/
 
-export const userFormSchema = yup.object().shape({
+export const signUpSchema = yup.object().shape({
     firstName: yup.string().required("Required"),
     lastName: yup.string().required("Required"),
     username: yup.string().required("Required"),

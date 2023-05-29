@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import userContext from "./UserContext";
 import { useFormik } from "formik";
-import { userFormSchema } from "../schemas";
+import { signUpSchema } from "../schemas/signUpSchema";
 import Copyright from "./Copyright";
 import ErrorMessage from "../common/ErrorMessage";
 import { Container, Avatar, Typography, Grid, TextField,  Button, Link, Box } from "@mui/material";
@@ -17,14 +17,13 @@ const SignupForm = () => {
   const onSubmit = async (values, actions, e) => {
     const msg = await signup(values);
     if (msg.success) {
-      navigate.apply('/');
+      navigate('/');
       console.log("submitted successfully!")
       actions.resetForm();
     }else {
       //Set server-side error to state.
       setErrors(submitErrors => [msg.e[0].data.error.message]);
     }
-    
   }
 
   const { handleBlur, errors, touched, handleChange, handleSubmit } = useFormik({
@@ -37,7 +36,7 @@ const SignupForm = () => {
       email: "",
       isAdmin: false
     },
-    validationSchema: userFormSchema,
+    validationSchema: signUpSchema,
     onSubmit,
   });
 

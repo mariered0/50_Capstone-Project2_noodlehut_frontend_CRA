@@ -40,6 +40,7 @@ class NoodleHutApi {
     /** Login user */
     static async login (data) {
         let res = await this.request('auth/token', data, "post");
+        console.log('res.token', res.token);
         return res.token;
     }
 
@@ -92,6 +93,6 @@ class NoodleHutApi {
 }
 
 // for now, put token (test_admin / password on the class)
-NoodleHutApi.token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3RfYWRtaW4iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2ODM1OTYxNzB9.BiqU4PbrDaWXQGd4xZyelNGCUjWc61pX8R9vbuGUlX4"
+// NoodleHutApi.token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3RfYWRtaW4iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2ODM1OTYxNzB9.BiqU4PbrDaWXQGd4xZyelNGCUjWc61pX8R9vbuGUlX4"
 
 export default NoodleHutApi;

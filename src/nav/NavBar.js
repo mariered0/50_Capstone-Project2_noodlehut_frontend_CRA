@@ -1,9 +1,11 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useContext } from "react";
+import { NavLink, Link } from "react-router-dom";
+import UserContext from "../user/UserContext";
 import "./NavBar.css";
 import { AppBar, Toolbar, Typography, Button, CssBaseline } from "@mui/material";
 
 function NavBar() {
+  const { currentUser, signout } = useContext(UserContext);
 
   return (
     <>
@@ -27,8 +29,18 @@ function NavBar() {
           <NavLink to="/signup">
           <Button color="inherit">Sign Up</Button>
           </NavLink>
+
+          <NavLink to="/signin">
+          <Button color="inherit">Sign In</Button>
+          </NavLink>
+
+
           <NavLink to="/user">
           <Button color="inherit">Profile</Button>
+          </NavLink>
+
+          <NavLink to="/" onClick={signout}>
+            <Button color="inherit">Sign Out</Button>
           </NavLink>
         </Toolbar>
       </AppBar>
