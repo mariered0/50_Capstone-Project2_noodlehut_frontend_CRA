@@ -43,19 +43,43 @@ function App() {
     setToken(null);
   };
 
+  // useEffect(
+  //   function getUserData() {
+  //     async function getCurrentUser() {
+  //       try{
+  //         //decode the token to get username
+  //         if(token){
+  //           const { username } = jose.decodeJwt(token);
+  //           NoodleHutApi.token = token;
+  //           const user = await NoodleHutApi.currentUser(username);
+  //           setCurrentUser(user);
+  //           console.log('current user:', user);
+  //         }
+  //       } catch (e){
+  //         console.error("getCurrentUser failed", e);
+  //       }
+  //     }
+  //     getCurrentUser();
+  //   },
+  //   [token]
+  // );
+
   useEffect(
     function getUserData() {
       async function getCurrentUser() {
-        try{
+        try {
           //decode the token to get username
           if(token){
-            const { username } = jose.decodeJwt(token);
-            NoodleHutApi.token = token;
-            const user = await NoodleHutApi.currentUser(username);
-            setCurrentUser(user);
-            console.log('current user:', user);
+            const decoded = jose.decodeJwt(token);
+            if (decoded !== null && decoded !== undefined && decoded.hasOwnProperty('username')) {
+              const { username } = decoded;
+              NoodleHutApi.token = token;
+              const user = await NoodleHutApi.currentUser(username);
+              setCurrentUser(user);
+              console.log('current user:', user);
+            }
           }
-        } catch (e){
+        } catch (e) {
           console.error("getCurrentUser failed", e);
         }
       }

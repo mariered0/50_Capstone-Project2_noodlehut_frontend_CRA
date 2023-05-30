@@ -5,6 +5,7 @@ import NavBar from "./nav/NavBar";
 import MenuList from "./menu/MenuList";
 import Signup from "./user/SignupForm";
 import Signin from "./user/SigninForm";
+import Profile from "./user/Profile";
 
 function AppRoutes() {
     return (
@@ -23,6 +24,7 @@ function AppRoutes() {
             <Route path="/signup" element={<Signup />} />
 
             <Route path="/signin" element={<Signin />}  />
+            <Route path="/user" element={<Profile />}  />
 
             </Routes>
 
