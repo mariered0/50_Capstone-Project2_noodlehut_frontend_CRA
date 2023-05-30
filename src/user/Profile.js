@@ -4,6 +4,7 @@ import { useFormik } from "formik";
 import { updateSchema } from "../schemas/updateSchema";
 import NoodleHutApi from "../api/api";
 import ErrorMessage from "../common/ErrorMessage";
+import SuccessMessage from "../common/SuccessMessage";
 import { Container, Avatar, Typography, Grid, TextField, Button, Link, Box,
 } from "@mui/material";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
@@ -36,7 +37,7 @@ const Profile = () => {
     }
   };
 
-  const { handleBlur, errors, touched, handleChange, handleSubmit, values, initialValues } = useFormik(
+  const { handleBlur, errors, touched, handleChange, handleSubmit, values } = useFormik(
     {
         initialValues: {
             username: currentUser.username,
@@ -52,21 +53,19 @@ const Profile = () => {
     }
   );
 
-  
-
-
   console.log('form values:', values);
   return (
     <>
       <Container component="main" maxWidth="xs">
+      {saveSuccess && <SuccessMessage content={`Information updated successfully!`}/>}
         <Box
           sx={{
-            marginTop: 8,
+            marginTop: saveSuccess && 2 || 8,
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
           }}
-        >
+        > 
           <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
             <AccountCircleIcon />
           </Avatar>
