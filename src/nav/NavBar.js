@@ -31,7 +31,9 @@ function NavBar() {
             Move this box to the right side in the navbar.
           */}
 
+          
           <Box justifyContent="flex-">
+          { currentUser ? "" :(<>
           <NavLink to="/signup">
           <Button color="inherit">Sign Up</Button>
           </NavLink>
@@ -39,6 +41,9 @@ function NavBar() {
           <NavLink to="/signin">
           <Button color="inherit">Sign In</Button>
           </NavLink>
+          </>
+          )}
+          
           
           { currentUser ? (<>
           <NavLink to="/user">

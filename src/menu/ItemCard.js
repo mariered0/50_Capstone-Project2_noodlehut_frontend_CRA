@@ -20,7 +20,6 @@ const ItemCard = ({ id, name, desc, price }) => {
           <Card sx={{ height: '100%' }}>
             <CardMedia
               component="img"
-              sx={{ hight: 100 }}
               image={ defaultImg }
             />
             <CardContent sx={{ flexGrow: 1 }}>
