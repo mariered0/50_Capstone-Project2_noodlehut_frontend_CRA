@@ -17,15 +17,13 @@ const Profile = () => {
 
   const onSubmit = async (values, actions, e) => {
     const data = {
-        password: currentUser.password,
         firstName: values.firstName,
         lastName: values.lastName,
         phone: values.phone,
         email: values.email,
         isAdmin: false
     };
-    console.log("it was ran");
-    console.log("data sending:", data);
+
     try {
         const user = await NoodleHutApi.updateCurrentUserProf(currentUser.username, data);
         setCurrentUser(user);
@@ -41,7 +39,6 @@ const Profile = () => {
     {
         initialValues: {
             username: currentUser.username,
-            password: currentUser.password,
             firstName: currentUser.firstName,
             lastName: currentUser.lastName,
             phone: currentUser.phone,
@@ -156,22 +153,6 @@ const Profile = () => {
                   helperText={touched.phone ? errors.phone : ""}
                 />
               </Grid>
-              {/* <Grid item xs={12}>
-                <TextField
-                  variant="outlined"
-                  required
-                  fullWidth
-                  name="password"
-                  type="password"
-                  id="password"
-                  value={values.password}
-                  autoComplete="current-password"
-                  onChange={handleChange}
-                  onBlur={handleBlur}
-                  error={errors.password && touched.password ? true : false}
-                  helperText={touched.password ? errors.password : ""}
-                />
-              </Grid> */}
             </Grid>
 
             <Button

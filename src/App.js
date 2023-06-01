@@ -19,7 +19,6 @@ function App() {
     try{
       let token = await NoodleHutApi.signup(data);
       setToken(token);
-      console.log('signup executed!')
       return { success: true }
     } catch(e) {
       console.error("signup failed", e);
@@ -29,10 +28,8 @@ function App() {
 
   async function signin(data) {
     try{
-      console.log('signin ran');
       let token = await NoodleHutApi.login(data);
       setToken(token);
-      console.log("logged in");
       return { success: true }
     } catch (e) {
       console.error("signin failed", e);
@@ -41,7 +38,6 @@ function App() {
   };
 
   async function signout() {
-    console.log('sign out ran!')
     setCurrentUser(null);
     setToken(null);
   };
@@ -61,7 +57,7 @@ function App() {
         } catch (e){
           console.error("getCurrentUser failed", e);
         }
-        setIsLoading(false);
+        // setIsLoading(false);
       }
       getCurrentUser();
     },
