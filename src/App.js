@@ -57,7 +57,7 @@ function App() {
         } catch (e){
           console.error("getCurrentUser failed", e);
         }
-        // setIsLoading(false);
+        setIsLoading(false);
       }
       getCurrentUser();
     },
