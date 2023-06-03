@@ -76,7 +76,6 @@ class NoodleHutApi {
 
     static async getItem(id){
         let res = await this.request(`item/${id}`);
-        console.log('item data:', res.item);
         return res.item;
     }
 

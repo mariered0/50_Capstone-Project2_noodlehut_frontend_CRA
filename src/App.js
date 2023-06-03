@@ -135,7 +135,8 @@ function App() {
   function getTotalCost() {
     let total = 0;
     cart.map((cartItem) => {
-      const itemData = NoodleHutApi.get()
+      const itemData = NoodleHutApi.getItem(id);
+      console.log(itemData);
     })
   }
 
