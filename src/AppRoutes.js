@@ -6,6 +6,7 @@ import MenuList from "./menu/MenuList";
 import Signup from "./user/SignupForm";
 import Signin from "./user/SigninForm";
 import Profile from "./user/Profile";
+import Cart from "./cart/Cart";
 
 function AppRoutes() {
     return (

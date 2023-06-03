@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import userContext from "../user/UserContext";
+// import Cart from "../menu/Cart.js";
 import { Box, Container, Typography, Button } from "@mui/material";
 import RestaurantIcon from '@mui/icons-material/Restaurant';
 
@@ -10,6 +11,9 @@ function Home() {
   
   return (
     <main>
+
+      {/* <Cart /> */}
+
       <Box
           sx={{
             bgcolor: 'background.paper',

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import cartContext from "../cart//CartContext";
 import {
   Grid,
   Card,
@@ -13,6 +14,7 @@ import defaultImg from "../image/image_unavailable.png";
 
 
 const ItemCard = ({ id, name, desc, price }) => {
+  const { cart, setCart, addToCart, removeFromCart } = useContext(cartContext);
 
   return (
     
@@ -30,7 +32,9 @@ const ItemCard = ({ id, name, desc, price }) => {
               <Typography>{price}</Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">
+              <Button size="small"
+                      onClick={() => addToCart(id)}
+              >
                 Add
               </Button>
             </CardActions>
