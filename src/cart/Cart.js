@@ -1,25 +1,20 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import cartContext from "./CartContext";
-import {
-  Box,
-  Drawer,
-  CssBaseline,
-  Typography,
-  Button,
-} from "@mui/material";
+import CartItem from "./CartItem";
+import { Box, Drawer, CssBaseline, Typography, Button, Divider } from "@mui/material";
+// import { positions } from '@mui/system';
+
 
 
 
 const Cart = () => {
 
-  const [isCartOpen, setIsCartOpen] = useState(true);
-  // const { cart, setCart, addToCart, removeFromCart } = useContext(cartContext);
-
   
+  const { cart, getTotalCost, isCartOpen, setIsCartOpen, deleteAllFromCart } = useContext(cartContext);
 
-
-
-
+  useEffect(() => {
+    console.log('cart:', cart);
+  }, [cart]);
 
   return (
     <Box sx={{ display: "flex" }}>
@@ -52,16 +47,35 @@ const Cart = () => {
           <Button variant="outlined"
                   size="small"
                   color="primary"
-                  // onClick={() => setIsCartOpen(false)}
+                  onClick={() => deleteAllFromCart()}
           >
             Clear Cart
           </Button>
         </Box>
         
-        <Box p={2} width="250px" textAlign="center" role="presentation">
-          <Typography variant="h6" component="div">
-            Cart
+        <Box p={2} width="100%" textAlign="center" role="presentation">
+          <Typography variant="h3" component="div">
+            Your Cart
           </Typography>
+          { 
+            cart.map(item => 
+              <CartItem key={item.id}
+                        id={item.id}
+                        name={item.name}
+                        qty={item.quantity}
+                        price={item.price}
+              />
+              )
+          }
+        </Box>
+        
+        
+        <Box m={2}>
+
+            <Divider variant="fullWidth" />
+            <Typography variant="h3" align="right">
+              Total: ${getTotalCost()}
+            </Typography>
         </Box>
       </Drawer>
     </Box>

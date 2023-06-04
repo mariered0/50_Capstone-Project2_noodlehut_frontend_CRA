@@ -16,7 +16,8 @@ function App() {
   const [token, setToken] = useLocalStorage("token", null);
   const [currentUser, setCurrentUser] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
-  const [cart, setCart] = useState(null);
+  const [isCartOpen, setIsCartOpen] = useState(false);
+  const [cart, setCart] = useState([]);
 
 
   async function signup(data) {
@@ -77,7 +78,7 @@ function App() {
   //helper method for addToCart/removeFromCart
   function getItemQuantity(id){
     //if item is not in cart, it won't try to get quantity
-    cart.find(item => item.id === id)?.quantity;
+    const quantity = cart.find(item => item.id === id)?.quantity;
 
     if(quantity === undefined) {
       return 0;
@@ -86,41 +87,44 @@ function App() {
   };
 
   //function to increment item in the cart
-  function addToCart(id) {
-    const quantity = getItemQuantity(id);
+  function addToCart(itemData) {
+    console.log('itemData:', itemData);
+    const quantity = getItemQuantity(itemData.id);
 
     if (quantity === 0){
       setCart([
         ...cart,
         {
-          id: id, 
+          id: itemData.id,
+          name: itemData.name,
+          price: itemData.price,
           quantity: 1
         }
       ])
 
     }else{ //if the item is already in cart
-      setCart(cart.map(item => item.id === id
+      setCart(cart.map(item => item.id === itemData.id
         ? {...item, quantity: item.quantity + 1}
         : item))
     }
     //update the cart item in localStorage
     //display the cart component\
-    console.log('cart:', cart)
+
   };
 
-  //function to delete the item from cart
-  function deleteFromCart(id) {
+  //helper method for removeFromCart
+  function deleteItem(id) {
     setCart(cartItems => cartItems.filter(currentItem => {
-      return currentItem.id != id
+      return currentItem.id !== id
     }))
   };
 
   //function to decrement item in the cart
-  function removeOneFromCart(id){
+  function removeFromCart(id){
     const quantity = getItemQuantity(id);
 
     if(quantity === 1){
-      deleteFromCart(id);
+      deleteItem(id);
     }else{
       setCart(cart.map(item => item.id === id
         ? {...item, quantity: item.quantity - 1}
@@ -128,16 +132,17 @@ function App() {
     }
   };
 
-  //function to remove everything from the cart
+  // function to remove everything from the cart
   function deleteAllFromCart(){
+    setCart([]);
   }
 
   function getTotalCost() {
     let total = 0;
-    cart.map((cartItem) => {
-      const itemData = NoodleHutApi.getItem(id);
-      console.log(itemData);
-    })
+    cart.map((item) => {
+      total += (item.price * item.quantity);
+    });
+    return parseFloat(total).toFixed(2);
   }
 
   
@@ -162,7 +167,7 @@ function App() {
         value={{ token, currentUser, setCurrentUser, signup, signin, signout }}
       >
         <CartContext.Provider
-          value={{ cart, setCart, addToCart, removeFromCart }}
+          value={{ cart, setCart, addToCart, getItemQuantity, removeFromCart, deleteItem, getTotalCost, isCartOpen, setIsCartOpen, deleteAllFromCart }}
         >
          <Cart />
          <AppRoutes />

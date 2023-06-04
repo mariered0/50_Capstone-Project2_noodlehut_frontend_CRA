@@ -8,13 +8,22 @@ import {
   CardActions,
   Button,
   Typography,
+  Box
 } from "@mui/material";
 
 import defaultImg from "../image/image_unavailable.png";
 
 
 const ItemCard = ({ id, name, desc, price }) => {
-  const { cart, setCart, addToCart, removeFromCart } = useContext(cartContext);
+  const { isCartOpen, setIsCartOpen, cart, setCart, addToCart, removeFromCart, getTotalCost } = useContext(cartContext);
+
+  
+  function add({id, name, price}){
+    addToCart({id, name, price})
+    if (!isCartOpen) setIsCartOpen(true);
+  };
+
+
 
   return (
     
@@ -32,11 +41,28 @@ const ItemCard = ({ id, name, desc, price }) => {
               <Typography>{price}</Typography>
             </CardContent>
             <CardActions>
-              <Button size="small"
-                      onClick={() => addToCart(id)}
-              >
-                Add
-              </Button>
+              { !cart.some(item => item.id === id)
+              ?
+                <Button size="small"
+                        onClick={() => add({id, name, price})}
+                >
+                  Add
+                </Button>
+              : 
+                <Box>
+                  <Button size="small"
+                          onClick={() => addToCart({id, name, price})}
+                  >
+                    +
+                  </Button>
+                  <Button size="small"
+                        onClick={() => removeFromCart(id)}
+                  >
+                    -
+                  </Button>
+                </Box>
+
+              }
             </CardActions>
           </Card>
         </Grid>
