@@ -17,8 +17,8 @@ function App() {
   const [currentUser, setCurrentUser] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [isCartOpen, setIsCartOpen] = useState(false);
-  const [cart, setCart] = useState([]);
-
+  // const [cart, setCart] = useState([]);
+  const [cart, setCart] = useLocalStorage("cart", []);
 
   async function signup(data) {
     try{
@@ -144,15 +144,6 @@ function App() {
     });
     return parseFloat(total).toFixed(2);
   }
-
-  
-  
-
-
-
-
-
-
 
   if (isLoading){
     return (

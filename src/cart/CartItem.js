@@ -52,11 +52,11 @@ const CartItem = ({ id, name, qty, price }) => {
           </Stack>
         </Grid>
         <Grid item xs={1} >
-          {/* <Box sx={{ height: 80 }} alignText="center">  */}
+          <Box sx={{ height: 80 }} display="flex" alignItems="center"> 
           <IconButton aria-label="delete" onClick={() => deleteItem(id)}>
             <CloseIcon />
           </IconButton>
-          {/* </Box> */}
+          </Box>
 
         </Grid>
       </Grid>
