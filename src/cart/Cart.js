@@ -26,29 +26,6 @@ const Cart = () => {
     console.log('isDialogOpen:', isDialogOpen);
   }, [isDialogOpen]);
 
-  // const CheckoutMessage = () => {
-  //   return (
-  //     <div>
-  //     <Dialog open={dialogOpen}
-  //             onClose={() => {setDialogOpen(false)}}
-  //             aria-labelledby="alert-dialog-title"
-  //     >
-  //       <DialogTitle id="alert-dialog-title">
-  //       You must sign in to checkout.
-  //       </DialogTitle>
-  //       <DialogActions display="flex" justifyContent="center">
-  //         <Button href="/menu">Continue Shopping</Button>
-  //         <Button href="/signin" autoFocus>
-  //           Sign In to Checkout
-  //         </Button>
-  //       </DialogActions>
-
-  //     </Dialog>
-  //   </div>
-  //   )
-  // }
-  
-
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
