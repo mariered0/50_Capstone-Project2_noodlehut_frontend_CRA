@@ -6,10 +6,13 @@ import {
   CardContent,
   CardMedia,
   CardActions,
+  IconButton,
   Button,
   Typography,
   Box
 } from "@mui/material";
+import AddCircleIcon from '@mui/icons-material/AddCircle';
+import RemoveCircleIcon from '@mui/icons-material/RemoveCircle';
 
 import defaultImg from "../image/image_unavailable.png";
 
@@ -43,23 +46,23 @@ const ItemCard = ({ id, name, desc, price }) => {
             <CardActions>
               { !cart.some(item => item.id === id)
               ?
-                <Button size="small"
+                <Button
                         onClick={() => add({id, name, price})}
                 >
                   Add
                 </Button>
               : 
                 <Box>
-                  <Button size="small"
+                  <IconButton
                           onClick={() => addToCart({id, name, price})}
                   >
-                    +
-                  </Button>
-                  <Button size="small"
+                    <AddCircleIcon />
+                  </IconButton>
+                  <IconButton size="small"
                         onClick={() => removeFromCart(id)}
                   >
-                    -
-                  </Button>
+                    <RemoveCircleIcon />
+                  </IconButton>
                 </Box>
 
               }
