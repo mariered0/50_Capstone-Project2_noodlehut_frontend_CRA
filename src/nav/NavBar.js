@@ -7,6 +7,7 @@ import { AppBar, Toolbar, Typography, Button, CssBaseline, Box, Badge, IconButto
 import { styled } from "@mui/material/styles"
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import RamenDiningIcon from '@mui/icons-material/RamenDining';
 
 function NavBar() {
   const { currentUser, signout } = useContext(UserContext);
@@ -32,9 +33,9 @@ function NavBar() {
           </Typography>
           </NavLink>
 
-          <NavLink to="/">
+          {/* <NavLink to="/">
           <Button color="inherit">Home</Button>
-          </NavLink>
+          </NavLink> */}
         
           <NavLink to="/menu">
           <Button color="inherit">Menu</Button>
