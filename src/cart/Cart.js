@@ -67,7 +67,7 @@ const Cart = () => {
           <Typography variant="h3" component="div">
             Your Cart
           </Typography>
-          {cart.map((item) => (
+          {cart?.map((item) => (
             <CartItem
               key={item.id}
               id={item.id}
