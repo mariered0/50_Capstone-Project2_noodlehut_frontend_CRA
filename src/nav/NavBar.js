@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import UserContext from "../user/UserContext";
 import CartContext from "../cart/CartContext";
-import "./NavBar.css";
-import { AppBar, Toolbar, Typography, Button, CssBaseline, Box, Badge, IconButton } from "@mui/material";
+// import "./NavBar.css";
+import { AppBar, Toolbar, Typography, Button, CssBaseline, Box, Badge, IconButton, Link } from "@mui/material";
 import { styled } from "@mui/material/styles"
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
@@ -24,21 +24,23 @@ function NavBar() {
 
   return (
     <>
-      <CssBaseline />
-      <AppBar component="nav">
+      {/* <CssBaseline /> */}
+      <AppBar component="nav"
+              color="neutral"
+      >
         <Toolbar>
           <NavLink to="/">
-          <Typography variant="h6">
+          <Button size="large" color="primary">
             NoodleHut
-          </Typography>
+          </Button>
           </NavLink>
 
-          {/* <NavLink to="/">
-          <Button color="inherit">Home</Button>
-          </NavLink> */}
+          <NavLink to="/">
+          <Button color="info">Home</Button>
+          </NavLink>
         
-          <NavLink to="/menu">
-          <Button color="inherit">Menu</Button>
+          <NavLink to="/menu" >
+          <Button color="info">Menu</Button>
           </NavLink>
 
           
@@ -52,11 +54,11 @@ function NavBar() {
             <Box>
           { currentUser ? "" :(<>
           <NavLink to="/signup">
-          <Button color="inherit">Sign Up</Button>
+          <Button color="info">Sign Up</Button>
           </NavLink>
 
           <NavLink to="/signin">
-          <Button color="inherit">Sign In</Button>
+          <Button color="info">Sign In</Button>
           </NavLink>
           </>
           )}
@@ -64,11 +66,11 @@ function NavBar() {
           
           { currentUser ? (<>
           <NavLink to="/user">
-            <Button color="inherit" startIcon={<AccountCircleIcon />}>{ currentUser.username}</Button>
+            <Button color="info" startIcon={<AccountCircleIcon />}>{ currentUser.username}</Button>
           </NavLink>
 
           <NavLink to="/" onClick={signout}>
-            <Button color="inherit">Sign Out</Button>
+            <Button color="info">Sign Out</Button>
           </NavLink>
           </>)
            : ""}

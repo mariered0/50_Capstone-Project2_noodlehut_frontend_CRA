@@ -7,7 +7,7 @@ import NoodleHutApi from './api/api';
 import useLocalStorage from "./hooks/useLocalStorage";
 import * as jose from 'jose';
 import Loading from "./common/Loading";
-
+import { createTheme, ThemeProvider } from "@mui/material";
 
 import './App.css';
 
@@ -107,8 +107,6 @@ function App() {
         ? {...item, quantity: item.quantity + 1}
         : item))
     }
-    //update the cart item in localStorage
-    //display the cart component\
 
   };
 
@@ -151,6 +149,22 @@ function App() {
       );
   };
   
+  const theme = createTheme({
+    palette: {
+      primary: {
+        main: "#009688"
+      },
+      secondary: {
+        main: "#4db6ac"
+      },
+      info: {
+        main: "#424242"
+      },
+      neutral: {
+        main: "#fafafa"
+      }
+    }
+  });
 
   return (
     <div className="App">
@@ -160,8 +174,10 @@ function App() {
         <CartContext.Provider
           value={{ cart, setCart, addToCart, getItemQuantity, removeFromCart, deleteItem, getTotalCost, isCartOpen, setIsCartOpen, deleteAllFromCart }}
         >
+          <ThemeProvider theme={theme}>
          <Cart />
          <AppRoutes />
+         </ThemeProvider>
         </CartContext.Provider>       
       </UserContext.Provider>
     </div>

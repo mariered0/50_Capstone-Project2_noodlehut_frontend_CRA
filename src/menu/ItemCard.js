@@ -14,7 +14,7 @@ import {
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import RemoveCircleIcon from '@mui/icons-material/RemoveCircle';
 
-import defaultImg from "../image/image_unavailable.png";
+import defaultImg from "../static/image/image_unavailable.png";
 
 
 const ItemCard = ({ id, name, desc, price }) => {
