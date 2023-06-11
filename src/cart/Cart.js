@@ -1,15 +1,8 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import cartContext from "./CartContext";
 import CartItem from "./CartItem";
 import CheckoutMessage from "./CheckoutMessage";
-import {
-  Box,
-  Drawer,
-  CssBaseline,
-  Typography,
-  Button,
-  Divider,
-} from "@mui/material";
+import { Box, Drawer, CssBaseline, Typography, Button, Divider } from "@mui/material";
 import ShoppingCartCheckoutIcon from "@mui/icons-material/ShoppingCartCheckout";
 
 const Cart = () => {
@@ -17,14 +10,6 @@ const Cart = () => {
   const { cart, getTotalCost, isCartOpen, setIsCartOpen, deleteAllFromCart } =
     useContext(cartContext);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
-
-  useEffect(() => {
-      console.log("cart:", cart);
-    }, [cart]);
-
-  useEffect(() => {
-    console.log('isDialogOpen:', isDialogOpen);
-  }, [isDialogOpen]);
 
   return (
     <Box sx={{ display: "flex" }}>
@@ -88,8 +73,7 @@ const Cart = () => {
                 variant="contained"
                 size="large"
                 startIcon={<ShoppingCartCheckoutIcon />}
-                onClick={() => {setIsDialogOpen(true)
-                                console.log('clicked!')}}
+                onClick={() => {setIsDialogOpen(true)}}
               >
                 Go to Checkout
               </Button>

@@ -1,20 +1,12 @@
 import React, { useState, useContext, useEffect } from "react";
 import cartContext from "./CartContext";
-import {
-  Box,
-  Grid,
-  Avatar,
-  Typography,
-  Divider,
-  IconButton,
-  Stack,
-} from "@mui/material";
+import { Box, Grid, Avatar, Typography, Divider, IconButton, Stack } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
 
 const CartItem = ({ id, name, qty, price }) => {
-  const { cart, deleteItem, addToCart, removeFromCart } =
+  const { deleteItem, addToCart, removeFromCart } =
     useContext(cartContext);
 
   return (

@@ -103,7 +103,7 @@ function App() {
       ])
 
     }else{ //if the item is already in cart
-      setCart(cart.map(item => item.id === itemData.id
+      setCart(cart?.map(item => item.id === itemData.id
         ? {...item, quantity: item.quantity + 1}
         : item))
     }
@@ -112,7 +112,7 @@ function App() {
 
   //helper method for removeFromCart
   function deleteItem(id) {
-    setCart(cartItems => cartItems.filter(currentItem => {
+    setCart(cartItems => cartItems?.filter(currentItem => {
       return currentItem.id !== id
     }))
   };
