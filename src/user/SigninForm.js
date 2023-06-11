@@ -9,17 +9,14 @@ import { CssBaseline, Container, Avatar, Typography, Grid, TextField,  Button, L
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 
 const SigninForm = () => {
-    const { token, signin } = useContext(userContext);
+    const { signin } = useContext(userContext);
     const navigate = useNavigate();
     const [submitErrors, setErrors ] = useState(null);
 
     const onSubmit = async (values, actions, e) => {
-        console.log('it was ran');
-        console.log('enterd values:', values);
         const msg = await signin(values);
         if (msg.success) {
           navigate('/');
-          console.log("submitted successfully!")
           actions.resetForm();
         }else {
           //Set server-side error to state.
@@ -37,7 +34,7 @@ const SigninForm = () => {
       });
 
     return (
-    // <ThemeProvider theme={defaultTheme}>
+
     <>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
@@ -107,7 +104,7 @@ const SigninForm = () => {
         <Copyright sx={{ mt: 8, mb: 4 }} />
       </Container>
       </>
-    // </ThemeProvider>
+
     )
 }
 

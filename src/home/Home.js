@@ -1,18 +1,10 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import userContext from "../user/UserContext";
-import {
-  Box,
-  Container,
-  Typography,
-  Button,
-  Grid,
-  Stack,
-} from "@mui/material";
+import { Box, Container, Typography, Button, Grid, Stack } from "@mui/material";
 import RestaurantIcon from "@mui/icons-material/Restaurant";
 import HomeIcon from "@mui/icons-material/Home";
 import ComputerIcon from "@mui/icons-material/Computer";
-import SuccessMessage from "../common/SuccessMessage";
 import heroImg from "../static/image/hero.jpg";
 
 function Home() {
@@ -29,10 +21,9 @@ function Home() {
             color="textPrimary"
             gutterBottom
           >
-            Welcome back, {currentUser.firstName}!
+            Welcome back, {currentUser?.firstName}!
           </Typography>
         ) : (
-          // <SuccessMessage content={`Welcome back, ${currentUser.firstName}!`}/>
           ""
         )}
 
@@ -90,7 +81,6 @@ function Home() {
             </Box>
           </Link>
         )}
-      {/* </Container> */}
 
       <Box
         sx={{
@@ -107,7 +97,7 @@ function Home() {
           spacing={{ xs: 3, md: 5 }}
           columns={{ xs: 4, sm: 8, md: 12 }}
         >
-          <Grid item xs={2} sm={4} md={4} key={1} display="flex" justifyContent={"center"}>
+          <Grid item xs={12} sm={6} md={4} key={1} display="flex" justifyContent={"center"}>
             <Box>
               <Typography
                 variant="h5"

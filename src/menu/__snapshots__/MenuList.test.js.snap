@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiContainer-root MuiContainer-maxWidthSm css-cuefkz-MuiContainer-root"
+  >
+    <h1
+      class="MuiTypography-root MuiTypography-h2 MuiTypography-alignCenter MuiTypography-gutterBottom css-10759ka-MuiTypography-root"
+    >
+      Menu
+    </h1>
+    <p
+      class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter MuiTypography-paragraph css-17rfbpd-MuiTypography-root"
+    >
+      Enjoy our authentic Thai food.
+    </p>
+  </div>
+</DocumentFragment>
+`;

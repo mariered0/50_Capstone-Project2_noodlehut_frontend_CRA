@@ -35,7 +35,7 @@ const MenuList = () => {
            
             </Container>
 
-                {items.map((categoryName, idx) => (
+                {items?.map((categoryName, idx) => (
                     <CategoryCard 
                         key={idx}
                         category={categoryName}

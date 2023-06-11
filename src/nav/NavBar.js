@@ -2,12 +2,10 @@ import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import UserContext from "../user/UserContext";
 import CartContext from "../cart/CartContext";
-// import "./NavBar.css";
-import { AppBar, Toolbar, Typography, Button, CssBaseline, Box, Badge, IconButton, Link } from "@mui/material";
+import { AppBar, Toolbar, Button, Box, Badge, IconButton } from "@mui/material";
 import { styled } from "@mui/material/styles"
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import RamenDiningIcon from '@mui/icons-material/RamenDining';
 
 function NavBar() {
   const { currentUser, signout } = useContext(UserContext);
@@ -24,7 +22,7 @@ function NavBar() {
 
   return (
     <>
-      {/* <CssBaseline /> */}
+
       <AppBar component="nav"
               color="neutral"
       >

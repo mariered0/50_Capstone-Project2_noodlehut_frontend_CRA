@@ -1,16 +1,6 @@
 import React, { useContext } from "react";
 import cartContext from "../cart//CartContext";
-import {
-  Grid,
-  Card,
-  CardContent,
-  CardMedia,
-  CardActions,
-  IconButton,
-  Button,
-  Typography,
-  Box
-} from "@mui/material";
+import { Grid, Card, CardContent, CardMedia, CardActions, IconButton, Button, Typography, Box } from "@mui/material";
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import RemoveCircleIcon from '@mui/icons-material/RemoveCircle';
 
@@ -18,15 +8,13 @@ import defaultImg from "../static/image/image_unavailable.png";
 
 
 const ItemCard = ({ id, name, desc, price }) => {
-  const { isCartOpen, setIsCartOpen, cart, setCart, addToCart, removeFromCart, getTotalCost } = useContext(cartContext);
+  const { isCartOpen, setIsCartOpen, cart, addToCart, removeFromCart } = useContext(cartContext);
 
   
   function add({id, name, price}){
     addToCart({id, name, price})
     if (!isCartOpen) setIsCartOpen(true);
   };
-
-
 
   return (
     

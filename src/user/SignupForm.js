@@ -10,7 +10,7 @@ import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 
 
 const SignupForm = () => {
-  const { token, signup } = useContext(userContext);
+  const { signup } = useContext(userContext);
   const navigate = useNavigate();
   const [submitErrors, setErrors ] = useState(null);
 
@@ -18,7 +18,6 @@ const SignupForm = () => {
     const msg = await signup(values);
     if (msg.success) {
       navigate('/');
-      console.log("submitted successfully!")
       actions.resetForm();
     }else {
       //Set server-side error to state.

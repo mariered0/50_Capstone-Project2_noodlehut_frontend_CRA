@@ -1,11 +1,11 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import userContext from "./UserContext";
 import { useFormik } from "formik";
 import { updateSchema } from "../schemas/updateSchema";
 import NoodleHutApi from "../api/api";
 import ErrorMessage from "../common/ErrorMessage";
 import SuccessMessage from "../common/SuccessMessage";
-import { Container, Avatar, Typography, Grid, TextField, Button, Link, Box,
+import { Container, Avatar, Typography, Grid, TextField, Button, Box,
 } from "@mui/material";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
@@ -13,7 +13,6 @@ const Profile = () => {
   const { currentUser, setCurrentUser } = useContext(userContext);
   const [submitErrors, setErrors] = useState(null);
   const [saveSuccess, setSaveSuccess] = useState(false);
-  console.log('currentUser', currentUser);
 
   const onSubmit = async (values, actions, e) => {
     const data = {
@@ -50,7 +49,6 @@ const Profile = () => {
     }
   );
 
-  console.log('form values:', values);
   return (
     <>
       <Container component="main" maxWidth="xs">

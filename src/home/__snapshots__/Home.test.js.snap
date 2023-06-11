@@ -1,0 +1,159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiContainer-root MuiContainer-maxWidthLg css-n9njem-MuiContainer-root"
+  >
+    <h3
+      class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter MuiTypography-gutterBottom css-14v45o4-MuiTypography-root"
+    >
+      Welcome back, Test!
+    </h3>
+    <div
+      class="MuiBox-root css-1l4w6pd"
+    >
+      <img
+        alt="food image"
+        class="MuiBox-root css-1yzt9ut"
+        src="hero.jpg"
+      />
+    </div>
+    <h1
+      class="MuiTypography-root MuiTypography-h2 MuiTypography-alignCenter MuiTypography-gutterBottom title css-1gjpbx8-MuiTypography-root"
+    >
+      NoodleHut
+    </h1>
+    <p
+      class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter MuiTypography-paragraph css-17rfbpd-MuiTypography-root"
+    >
+      Thai home-style coocking. We serve authentically traditional Thai dishes.
+      <br />
+      No dine-in. This is a take-out restaurant.
+    </p>
+    <footer
+      class="MuiBox-root css-byqtsl"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 MuiGrid-spacing-md-5 css-2rm95u-MuiGrid-root"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 MuiGrid-grid-sm-4 MuiGrid-grid-md-4 css-507lne-MuiGrid-root"
+        >
+          <div
+            class="MuiBox-root css-0"
+          >
+            <div
+              class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter css-y07eks-MuiTypography-root"
+            >
+              Visit
+            </div>
+            <div
+              class="MuiStack-root css-1rlitzi-MuiStack-root"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeLarge css-bsqp9w-MuiSvgIcon-root"
+                data-testid="HomeIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+                />
+              </svg>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-e784if-MuiTypography-root"
+              >
+                8418 NoodleHut, Good, WA, United States
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 MuiGrid-grid-sm-4 MuiGrid-grid-md-4 css-507lne-MuiGrid-root"
+        >
+          <div
+            class="MuiBox-root css-0"
+          >
+            <h5
+              class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter css-y07eks-MuiTypography-root"
+            >
+              Hours
+            </h5>
+            <p
+              class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+            >
+              Tue - Fri:
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-e784if-MuiTypography-root"
+            >
+              11:00 AM - 3:00 PM & 4:30 PM - 8:30 PM
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+            >
+              Sat:
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-e784if-MuiTypography-root"
+            >
+              12:00 PM - 3:00 PM & 4:30 PM - 8:30 PM
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+            >
+              Mon & Sun
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-e784if-MuiTypography-root"
+            >
+              Closed
+            </p>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 MuiGrid-grid-sm-4 MuiGrid-grid-md-4 css-507lne-MuiGrid-root"
+        >
+          <div
+            class="MuiBox-root css-0"
+          >
+            <div
+              class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter css-y07eks-MuiTypography-root"
+            >
+              Contact
+            </div>
+            <div
+              align="center"
+              class="MuiStack-root css-1rlitzi-MuiStack-root"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeLarge css-bsqp9w-MuiSvgIcon-root"
+                data-testid="ComputerIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"
+                />
+              </svg>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-e784if-MuiTypography-root"
+              >
+                Developped by
+              </p>
+              <a
+                href="https://github.com/mariered0"
+              >
+                Marie H.
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</DocumentFragment>
+`;

@@ -25,7 +25,7 @@ const CategoryCard = ({ category }) => {
       <Container sx={{ py: 8 }} maxWidth="md">
         <Grid container spacing={4}>
           {items
-            .filter((item) => item.categoryName === `${category}`)
+            ?.filter((item) => item.categoryName === `${category}`)
             .map((filteredItem) => (
               <ItemCard
                 key={filteredItem.id}
