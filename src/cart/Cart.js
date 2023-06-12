@@ -17,10 +17,15 @@ const Cart = () => {
 
       <Drawer
         sx={{
-          width: 240,
           flexShrink: 0,
           "& .MuiDrawer-paper": {
-            width: "30%",
+            width: {
+                xs: '80%',
+                sm: '70%',
+                md: '50%',
+                lg: '30%',
+                xl: '30%'
+            },
           },
         }}
         variant="persistent"
@@ -48,7 +53,7 @@ const Cart = () => {
           </Button>
         </Box>
 
-        <Box p={2} width="100%" textAlign="center" role="presentation">
+        <Box p={2} textAlign="center" role="presentation">
           <Typography variant="h3" component="div">
             Your Cart
           </Typography>

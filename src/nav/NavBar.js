@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import UserContext from "../user/UserContext";
 import CartContext from "../cart/CartContext";
-import { AppBar, Toolbar, Button, Box, Badge, IconButton } from "@mui/material";
+import { AppBar, Toolbar, Button, Box, Badge, IconButton, Stack } from "@mui/material";
 import { styled } from "@mui/material/styles"
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
@@ -25,31 +25,21 @@ function NavBar() {
 
       <AppBar component="nav"
               color="neutral"
+              position="sticky"
       >
-        <Toolbar>
+        <Toolbar disableGutters>
           <NavLink to="/">
           <Button size="large" color="primary">
             NoodleHut
           </Button>
           </NavLink>
 
-          <NavLink to="/">
-          <Button color="info">Home</Button>
-          </NavLink>
+          <Stack direction="row" spacing={1}>
         
           <NavLink to="/menu" >
           <Button color="info">Menu</Button>
-          </NavLink>
+          </NavLink>    
 
-          
-
-
-
-          {/*  This is only displayed when user has an account and logged in.
-            Move this box to the right side in the navbar.
-          */}      
-          <Box display="flex" justifyContent="right">
-            <Box>
           { currentUser ? "" :(<>
           <NavLink to="/signup">
           <Button color="info">Sign Up</Button>
@@ -64,7 +54,9 @@ function NavBar() {
           
           { currentUser ? (<>
           <NavLink to="/user">
-            <Button color="info" startIcon={<AccountCircleIcon />}>{ currentUser.username}</Button>
+            <IconButton aria-label="profile" color="info" href="/user">
+              <AccountCircleIcon/>
+            </IconButton>
           </NavLink>
 
           <NavLink to="/" onClick={signout}>
@@ -82,9 +74,8 @@ function NavBar() {
               </StyledBadge>
             </IconButton>
           </NavLink>
-          </Box>
 
-          </Box>
+          </Stack>
 
         </Toolbar>
       </AppBar>

@@ -4,6 +4,7 @@ import { Box, Grid, Avatar, Typography, Divider, IconButton, Stack } from "@mui/
 import CloseIcon from "@mui/icons-material/Close";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
+import img from "../static/image/image_unavailable.png";
 
 const CartItem = ({ id, name, qty, price }) => {
   const { deleteItem, addToCart, removeFromCart } =
@@ -12,10 +13,21 @@ const CartItem = ({ id, name, qty, price }) => {
   return (
     <Box key={id} sx={{ flexGrow: 1 }}>
       <Grid container>
-        <Grid item xs={3}>
+        <Grid item xs={3} >
           <Avatar
-            src={`image/image_unavailable.png`}
-            sx={{ width: 80, height: 80, mr: 2 }}
+            src={img}
+            sx={{ mr: 2,
+                  width: { xs: 0,
+                           sm: 0,
+                           md: 80,
+                           lg: 80,
+                           xl: 80},
+                  height: { xs: 0,
+                            sm: 0,
+                            md: 80,
+                            lg: 80,
+                            xl: 80}
+                  }}
           />
         </Grid>
         <Grid item xs={7}>

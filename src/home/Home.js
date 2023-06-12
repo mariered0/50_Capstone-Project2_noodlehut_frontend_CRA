@@ -85,20 +85,20 @@ function Home() {
       <Box
         sx={{
           width: "100%",
-          display: "flex",
-          justifyContent: "space-around",
-          p: 2,
-          m: 4,
+          // display: "flex",
+          // justifyContent: "space-around",
+          mt: 4,
         }}
         component="footer"
+        
       >
         <Grid
           container
           spacing={{ xs: 3, md: 5 }}
           columns={{ xs: 4, sm: 8, md: 12 }}
         >
-          <Grid item xs={12} sm={6} md={4} key={1} display="flex" justifyContent={"center"}>
-            <Box>
+          <Grid item sm={12} md={4} key={1} display="flex" justifyContent={"center"}>
+              <Box>
               <Typography
                 variant="h5"
                 component="div"
@@ -112,9 +112,9 @@ function Home() {
                 <HomeIcon fontSize="large" color="primary" />
                 <Typography variant="body2">8418 NoodleHut, Good, WA, United States</Typography>
               </Stack>
-            </Box>
+              </Box>
           </Grid>
-          <Grid item xs={2} sm={4} md={4} display="flex" justifyContent={"center"}>
+          <Grid item sm={12} md={4} display="flex" justifyContent={"center"}>
             <Box>
               <Typography variant="h5" align="center" color="primary">
                 Hours
@@ -128,7 +128,7 @@ function Home() {
             </Box>
           </Grid>
 
-          <Grid item xs={2} sm={4} md={4} display="flex" justifyContent={"center"}>
+          <Grid item sm={12} md={4} display="flex" justifyContent={"center"}>
             <Box>
                 <Typography variant="h5" component="div" align="center" color="primary">
                   Contact
