@@ -84,9 +84,6 @@ function Home() {
 
       <Box
         sx={{
-          width: "100%",
-          // display: "flex",
-          // justifyContent: "space-around",
           mt: 4,
         }}
         component="footer"
