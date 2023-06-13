@@ -9,8 +9,6 @@ import * as jose from 'jose';
 import Loading from "./common/Loading";
 import { createTheme, ThemeProvider } from "@mui/material";
 
-import './App.css';
-
 
 function App() {
   const [token, setToken] = useLocalStorage("token", null);
