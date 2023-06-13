@@ -33,7 +33,7 @@ const ItemCard = ({ id, name, desc, price }) => {
             </CardContent>
             <CardActions>
               { !cart.some(item => item.id === id)
-              ?
+              ? 
                 <Button
                         onClick={() => add({id, name, price})}
                 >

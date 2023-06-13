@@ -3,10 +3,10 @@
 exports[`matches snapshot 1`] = `
 <DocumentFragment>
   <nav
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorNeutral MuiAppBar-positionFixed mui-fixed css-1gfe18b-MuiPaper-root-MuiAppBar-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorNeutral MuiAppBar-positionSticky css-1ykwv73-MuiPaper-root-MuiAppBar-root"
   >
     <div
-      class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-hyum1k-MuiToolbar-root"
+      class="MuiToolbar-root MuiToolbar-regular css-r6ewbb-MuiToolbar-root"
     >
       <a
         aria-current="page"
@@ -24,125 +24,101 @@ exports[`matches snapshot 1`] = `
           />
         </button>
       </a>
-      <a
-        aria-current="page"
-        class="active"
-        href="/"
-      >
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInfo MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textInfo MuiButton-sizeMedium MuiButton-textSizeMedium css-dfgewh-MuiButtonBase-root-MuiButton-root"
-          tabindex="0"
-          type="button"
-        >
-          Home
-          <span
-            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-          />
-        </button>
-      </a>
-      <a
-        class=""
-        href="/menu"
-      >
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInfo MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textInfo MuiButton-sizeMedium MuiButton-textSizeMedium css-dfgewh-MuiButtonBase-root-MuiButton-root"
-          tabindex="0"
-          type="button"
-        >
-          Menu
-          <span
-            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-          />
-        </button>
-      </a>
       <div
-        class="MuiBox-root css-1uwjw6e"
+        class="MuiStack-root css-w4z10b-MuiStack-root"
       >
-        <div
-          class="MuiBox-root css-0"
+        <a
+          class=""
+          href="/menu"
         >
-          <a
-            class=""
-            href="/user"
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInfo MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textInfo MuiButton-sizeMedium MuiButton-textSizeMedium css-dfgewh-MuiButtonBase-root-MuiButton-root"
+            tabindex="0"
+            type="button"
           >
-            <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInfo MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textInfo MuiButton-sizeMedium MuiButton-textSizeMedium css-dfgewh-MuiButtonBase-root-MuiButton-root"
-              tabindex="0"
-              type="button"
+            Menu
+            <span
+              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+            />
+          </button>
+        </a>
+        <a
+          class=""
+          href="/user"
+        />
+        <a
+          aria-label="profile"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInfo MuiIconButton-sizeMedium css-4zphwq-MuiButtonBase-root-MuiIconButton-root"
+          href="/user"
+          tabindex="0"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="AccountCircleIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm0 14c-2.03 0-4.43-.82-6.14-2.88C7.55 15.8 9.68 15 12 15s4.45.8 6.14 2.12C16.43 19.18 14.03 20 12 20z"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </a>
+        <a
+          aria-current="page"
+          class="active"
+          href="/"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInfo MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textInfo MuiButton-sizeMedium MuiButton-textSizeMedium css-dfgewh-MuiButtonBase-root-MuiButton-root"
+            tabindex="0"
+            type="button"
+          >
+            Sign Out
+            <span
+              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+            />
+          </button>
+        </a>
+        <a
+          aria-current="page"
+          class="active"
+          href="/"
+        >
+          <button
+            aria-label="cart"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiBadge-root css-617q51-MuiBadge-root"
             >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ShoppingCartIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
               >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-                  data-testid="AccountCircleIcon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm0 14c-2.03 0-4.43-.82-6.14-2.88C7.55 15.8 9.68 15 12 15s4.45.8 6.14 2.12C16.43 19.18 14.03 20 12 20z"
-                  />
-                </svg>
-              </span>
+                <path
+                  d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
+                />
+              </svg>
               <span
-                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-              />
-            </button>
-          </a>
-          <a
-            aria-current="page"
-            class="active"
-            href="/"
-          >
-            <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInfo MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textInfo MuiButton-sizeMedium MuiButton-textSizeMedium css-dfgewh-MuiButtonBase-root-MuiButton-root"
-              tabindex="0"
-              type="button"
-            >
-              Sign Out
-              <span
-                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-              />
-            </button>
-          </a>
-          <a
-            aria-current="page"
-            class="active"
-            href="/"
-          >
-            <button
-              aria-label="cart"
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
-              tabindex="0"
-              type="button"
-            >
-              <span
-                class="MuiBadge-root css-617q51-MuiBadge-root"
+                class="MuiBadge-badge MuiBadge-standard MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorSecondary css-r9yzrd-MuiBadge-badge"
               >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-                  data-testid="ShoppingCartIcon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
-                  />
-                </svg>
-                <span
-                  class="MuiBadge-badge MuiBadge-standard MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorSecondary css-r9yzrd-MuiBadge-badge"
-                >
-                  7
-                </span>
+                7
               </span>
-              <span
-                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-              />
-            </button>
-          </a>
-        </div>
+            </span>
+            <span
+              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+            />
+          </button>
+        </a>
       </div>
     </div>
   </nav>

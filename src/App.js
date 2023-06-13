@@ -56,8 +56,7 @@ function App() {
             const { username } = jose.decodeJwt(token);
             NoodleHutApi.token = token;
             const user = await NoodleHutApi.currentUser(username);
-            setCurrentUser(user);
-            console.log('current user:', user);
+            setCurrentUser(user)
           }
         } catch (e){
           console.error("getCurrentUser failed", e);
@@ -88,7 +87,6 @@ function App() {
 
   //function to increment item in the cart
   function addToCart(itemData) {
-    console.log('itemData:', itemData);
     const quantity = getItemQuantity(itemData.id);
 
     if (quantity === 0){

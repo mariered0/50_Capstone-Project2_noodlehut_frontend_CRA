@@ -6,7 +6,7 @@ exports[`matches snapshot 1`] = `
     class="MuiBox-root css-k008qs"
   >
     <div
-      class="MuiDrawer-root MuiDrawer-docked css-64ccy7-MuiDrawer-docked"
+      class="MuiDrawer-root MuiDrawer-docked css-1hnz2to-MuiDrawer-docked"
     >
       <div
         class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight css-18sg6k4-MuiPaper-root-MuiDrawer-paper"
@@ -36,7 +36,7 @@ exports[`matches snapshot 1`] = `
           </button>
         </div>
         <div
-          class="MuiBox-root css-1hypl1z"
+          class="MuiBox-root css-vrk4dv"
           role="presentation"
         >
           <div
@@ -54,11 +54,11 @@ exports[`matches snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 css-1equabv-MuiGrid-root"
               >
                 <div
-                  class="MuiAvatar-root MuiAvatar-circular css-1plftc5-MuiAvatar-root"
+                  class="MuiAvatar-root MuiAvatar-circular css-gy4mli-MuiAvatar-root"
                 >
                   <img
                     class="MuiAvatar-img css-1pqm26d-MuiAvatar-img"
-                    src="image/image_unavailable.png"
+                    src="image_unavailable.png"
                   />
                 </div>
               </div>
@@ -179,11 +179,11 @@ exports[`matches snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 css-1equabv-MuiGrid-root"
               >
                 <div
-                  class="MuiAvatar-root MuiAvatar-circular css-1plftc5-MuiAvatar-root"
+                  class="MuiAvatar-root MuiAvatar-circular css-gy4mli-MuiAvatar-root"
                 >
                   <img
                     class="MuiAvatar-img css-1pqm26d-MuiAvatar-img"
-                    src="image/image_unavailable.png"
+                    src="image_unavailable.png"
                   />
                 </div>
               </div>
@@ -304,11 +304,11 @@ exports[`matches snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 css-1equabv-MuiGrid-root"
               >
                 <div
-                  class="MuiAvatar-root MuiAvatar-circular css-1plftc5-MuiAvatar-root"
+                  class="MuiAvatar-root MuiAvatar-circular css-gy4mli-MuiAvatar-root"
                 >
                   <img
                     class="MuiAvatar-img css-1pqm26d-MuiAvatar-img"
-                    src="image/image_unavailable.png"
+                    src="image_unavailable.png"
                   />
                 </div>
               </div>

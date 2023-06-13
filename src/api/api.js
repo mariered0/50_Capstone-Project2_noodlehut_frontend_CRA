@@ -17,7 +17,6 @@ class NoodleHutApi {
             : {};
 
         try{
-            console.log('a request was made!')
             return (await axios({ url, method, data, params, headers })).data;
         } catch (err){
             console.error("API Error:", err.response);
@@ -40,7 +39,6 @@ class NoodleHutApi {
     /** Login user */
     static async login (data) {
         let res = await this.request('auth/token', data, "post");
-        console.log('res.token', res.token);
         return res.token;
     }
 

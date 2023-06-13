@@ -32,13 +32,13 @@ exports[`matches snapshot 1`] = `
       No dine-in. This is a take-out restaurant.
     </p>
     <footer
-      class="MuiBox-root css-byqtsl"
+      class="MuiBox-root css-h5fkc8"
     >
       <div
         class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 MuiGrid-spacing-md-5 css-2rm95u-MuiGrid-root"
       >
         <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 MuiGrid-grid-sm-4 MuiGrid-grid-md-4 css-507lne-MuiGrid-root"
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-sm-12 MuiGrid-grid-md-4 css-1h5kmtj-MuiGrid-root"
         >
           <div
             class="MuiBox-root css-0"
@@ -71,7 +71,7 @@ exports[`matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 MuiGrid-grid-sm-4 MuiGrid-grid-md-4 css-507lne-MuiGrid-root"
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-sm-12 MuiGrid-grid-md-4 css-1h5kmtj-MuiGrid-root"
         >
           <div
             class="MuiBox-root css-0"
@@ -114,7 +114,7 @@ exports[`matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 MuiGrid-grid-sm-4 MuiGrid-grid-md-4 css-507lne-MuiGrid-root"
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-sm-12 MuiGrid-grid-md-4 css-1h5kmtj-MuiGrid-root"
         >
           <div
             class="MuiBox-root css-0"

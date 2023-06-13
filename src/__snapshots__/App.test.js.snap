@@ -9,7 +9,7 @@ exports[`matches snapshot 1`] = `
       class="MuiBox-root css-k008qs"
     >
       <div
-        class="MuiDrawer-root MuiDrawer-docked css-64ccy7-MuiDrawer-docked"
+        class="MuiDrawer-root MuiDrawer-docked css-1hnz2to-MuiDrawer-docked"
       >
         <div
           class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight css-18sg6k4-MuiPaper-root-MuiDrawer-paper"
@@ -40,7 +40,7 @@ exports[`matches snapshot 1`] = `
             </button>
           </div>
           <div
-            class="MuiBox-root css-1hypl1z"
+            class="MuiBox-root css-vrk4dv"
             role="presentation"
           >
             <div
@@ -94,10 +94,10 @@ exports[`matches snapshot 1`] = `
       </div>
     </div>
     <nav
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorNeutral MuiAppBar-positionFixed mui-fixed css-1gfe18b-MuiPaper-root-MuiAppBar-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorNeutral MuiAppBar-positionSticky css-1ykwv73-MuiPaper-root-MuiAppBar-root"
     >
       <div
-        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-hyum1k-MuiToolbar-root"
+        class="MuiToolbar-root MuiToolbar-regular css-r6ewbb-MuiToolbar-root"
       >
         <a
           aria-current="page"
@@ -115,108 +115,88 @@ exports[`matches snapshot 1`] = `
             />
           </button>
         </a>
-        <a
-          aria-current="page"
-          class="active"
-          href="/"
-        >
-          <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInfo MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textInfo MuiButton-sizeMedium MuiButton-textSizeMedium css-dfgewh-MuiButtonBase-root-MuiButton-root"
-            tabindex="0"
-            type="button"
-          >
-            Home
-            <span
-              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-            />
-          </button>
-        </a>
-        <a
-          class=""
-          href="/menu"
-        >
-          <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInfo MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textInfo MuiButton-sizeMedium MuiButton-textSizeMedium css-dfgewh-MuiButtonBase-root-MuiButton-root"
-            tabindex="0"
-            type="button"
-          >
-            Menu
-            <span
-              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-            />
-          </button>
-        </a>
         <div
-          class="MuiBox-root css-1uwjw6e"
+          class="MuiStack-root css-w4z10b-MuiStack-root"
         >
-          <div
-            class="MuiBox-root css-0"
+          <a
+            class=""
+            href="/menu"
           >
-            <a
-              class=""
-              href="/signup"
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInfo MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textInfo MuiButton-sizeMedium MuiButton-textSizeMedium css-dfgewh-MuiButtonBase-root-MuiButton-root"
+              tabindex="0"
+              type="button"
             >
-              <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInfo MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textInfo MuiButton-sizeMedium MuiButton-textSizeMedium css-dfgewh-MuiButtonBase-root-MuiButton-root"
-                tabindex="0"
-                type="button"
-              >
-                Sign Up
-                <span
-                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                />
-              </button>
-            </a>
-            <a
-              class=""
-              href="/signin"
+              Menu
+              <span
+                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+              />
+            </button>
+          </a>
+          <a
+            class=""
+            href="/signup"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInfo MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textInfo MuiButton-sizeMedium MuiButton-textSizeMedium css-dfgewh-MuiButtonBase-root-MuiButton-root"
+              tabindex="0"
+              type="button"
             >
-              <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInfo MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textInfo MuiButton-sizeMedium MuiButton-textSizeMedium css-dfgewh-MuiButtonBase-root-MuiButton-root"
-                tabindex="0"
-                type="button"
-              >
-                Sign In
-                <span
-                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                />
-              </button>
-            </a>
-            <a
-              aria-current="page"
-              class="active"
-              href="/"
+              Sign Up
+              <span
+                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+              />
+            </button>
+          </a>
+          <a
+            class=""
+            href="/signin"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInfo MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textInfo MuiButton-sizeMedium MuiButton-textSizeMedium css-dfgewh-MuiButtonBase-root-MuiButton-root"
+              tabindex="0"
+              type="button"
             >
-              <button
-                aria-label="cart"
-                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
-                tabindex="0"
-                type="button"
+              Sign In
+              <span
+                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+              />
+            </button>
+          </a>
+          <a
+            aria-current="page"
+            class="active"
+            href="/"
+          >
+            <button
+              aria-label="cart"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiBadge-root css-617q51-MuiBadge-root"
               >
-                <span
-                  class="MuiBadge-root css-617q51-MuiBadge-root"
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  data-testid="ShoppingCartIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-                    data-testid="ShoppingCartIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
-                    />
-                  </svg>
-                  <span
-                    class="MuiBadge-badge MuiBadge-standard MuiBadge-invisible MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorSecondary css-1kwv2p4-MuiBadge-badge"
+                  <path
+                    d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
                   />
-                </span>
+                </svg>
                 <span
-                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  class="MuiBadge-badge MuiBadge-standard MuiBadge-invisible MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorSecondary css-1kwv2p4-MuiBadge-badge"
                 />
-              </button>
-            </a>
-          </div>
+              </span>
+              <span
+                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+              />
+            </button>
+          </a>
         </div>
       </div>
     </nav>
@@ -278,13 +258,13 @@ exports[`matches snapshot 1`] = `
         </div>
       </a>
       <footer
-        class="MuiBox-root css-byqtsl"
+        class="MuiBox-root css-h5fkc8"
       >
         <div
           class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 MuiGrid-spacing-md-5 css-2rm95u-MuiGrid-root"
         >
           <div
-            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 MuiGrid-grid-sm-4 MuiGrid-grid-md-4 css-507lne-MuiGrid-root"
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-sm-12 MuiGrid-grid-md-4 css-1h5kmtj-MuiGrid-root"
           >
             <div
               class="MuiBox-root css-0"
@@ -317,7 +297,7 @@ exports[`matches snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 MuiGrid-grid-sm-4 MuiGrid-grid-md-4 css-507lne-MuiGrid-root"
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-sm-12 MuiGrid-grid-md-4 css-1h5kmtj-MuiGrid-root"
           >
             <div
               class="MuiBox-root css-0"
@@ -360,7 +340,7 @@ exports[`matches snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 MuiGrid-grid-sm-4 MuiGrid-grid-md-4 css-507lne-MuiGrid-root"
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-sm-12 MuiGrid-grid-md-4 css-1h5kmtj-MuiGrid-root"
           >
             <div
               class="MuiBox-root css-0"
