@@ -1,11 +1,9 @@
-import react from "react";
-import cartContext from "./CartContext";
 import {Dialog, DialogTitle, DialogActions, Button } from "@mui/material";
 
 const CheckoutMessage = ({ isDialogOpen, setIsDialogOpen }) => {
 
   const handleClose = (event, reason) => {
-    if (event && reason == 'backdropClick') setIsDialogOpen(false);
+    if (event && reason === 'backdropClick') setIsDialogOpen(false);
   }
 
   return (

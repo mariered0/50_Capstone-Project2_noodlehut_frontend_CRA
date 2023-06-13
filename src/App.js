@@ -135,8 +135,8 @@ function App() {
 
   function getTotalCost() {
     let total = 0;
-    cart.map((item) => {
-      total += (item.price * item.quantity);
+    cart?.map((item) => {
+      return total += (item.price * item.quantity);
     });
     return parseFloat(total).toFixed(2);
   }

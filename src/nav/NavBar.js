@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import UserContext from "../user/UserContext";
 import CartContext from "../cart/CartContext";
-import { AppBar, Toolbar, Button, Box, Badge, IconButton, Stack } from "@mui/material";
+import { AppBar, Toolbar, Button, Badge, IconButton, Stack } from "@mui/material";
 import { styled } from "@mui/material/styles"
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';

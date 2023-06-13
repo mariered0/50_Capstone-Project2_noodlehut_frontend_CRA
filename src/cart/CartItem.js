@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import cartContext from "./CartContext";
 import { Box, Grid, Avatar, Typography, Divider, IconButton, Stack } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";

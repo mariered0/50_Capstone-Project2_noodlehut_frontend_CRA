@@ -55,7 +55,7 @@ const Profile = () => {
       {saveSuccess && <SuccessMessage content={`Information updated successfully!`}/>}
         <Box
           sx={{
-            marginTop: saveSuccess && 2 || 8,
+            marginTop: saveSuccess && (2 || 8),
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
