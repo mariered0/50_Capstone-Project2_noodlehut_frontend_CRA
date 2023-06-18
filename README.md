@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# E-commerce Website - NoodleHut
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+NoodleHut is an e-commerce website for a take-out restaurant where uses can see information of the restaurant and the menu which is coming from an API, add to cart, and create their accounts.
 
-## Available Scripts
+![landing_page](https://github.com/mariered0/50_Capstone-Project2_noodlehut_frontend_CRA/blob/main/documentation/landing_page.png?raw=true)
 
-In the project directory, you can run:
+App deployed: [NoodleHut](https://noodlehut.surge.sh/)</br>
+Backend: [Github Repo](https://github.com/mariered0/50_Capstone-Project2_backend)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Data Source
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Data (the restaurant menu) is sourced by an API that I created.</br>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Database Schema
+![database schema](https://github.com/mariered0/50_Capstone-Project2_noodlehut_frontend_CRA/blob/main/documentation/Schema_NoodleHut.png?raw=true)
 
-### `npm run build`
+## Technologies Used
+**Backend**<br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Express (Node.js)
+* PostgreSQL (database)
+* Node-pg (connection to database)
+* bcrypt (password hashing)
+* Json Web Token (authentication)
+* JSON Schema (data validation)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Frontend**<br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* React (frontend framework)
+* Material UI (frontend framework)
+* formik (form validation)
+* yup (form data validation)
 
-### `npm run eject`
+## Usage
+**Features**<br>
+Users can:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* browse the restaurant's menu
+* add items to their cart
+* sign up/sign in to their account
+* edit their account information
+* order take-outs <br>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**How to Use**<br>
+Prepare the backend and database.<br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone the backend repo with the following command and Enter.
+```
+$ git clone https://github.com/mariered0/50_Capstone-Project2_backend
+```
+2. Navigate to the '50_Capstone-Project2_backend' folder.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Install the backend dependencies by the following command:
+```
+npm install
+```
+4. Create NoodleHut database with the following command:
+```
+psql < noodlehut.sql
+```
+5. Start the backend with the following command:
+```
+npm start
+```
 
-## Learn More
+Prepare the frontend.<br>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone the frontend repo with the following command and Enter.
+```
+$ git clone https://github.com/mariered0/50_Capstone-Project2_noodlehut_frontend_CRA
+```
+2. Navigate to the '50_Capstone-Project2_noodlehut_frontend_CRA' folder.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Install the frontend dependencies by the following command:
+```
+npm install
+```
 
-### Code Splitting
+4. Start the frontend with the following command:
+```
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Features to Be Added
+* Payment process
+* In-app inquiry (messages)
+* Admin section (restaurant-side)
+* Announcement section
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
